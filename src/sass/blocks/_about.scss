@@ -1,0 +1,40 @@
+.about {
+    min-height: 600px;
+    margin-top: 120px;
+    &__wrapper {
+        display: flex;
+    }
+    &__wrapper-img {
+        width: 400px;
+        //height: 400px;
+        background: url('../img/main_photo.jpg') center (center / cover) no-repeat;
+    }
+    &__wrapper-descr {
+        width: 570px;
+        margin: 6px 100px 65px 65px;
+        h2 {
+            @include range;
+            margin-bottom: 6px;
+        }
+    }
+    &__wrapper-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-items: space-between;
+    }
+    &__wrapper-skill {
+        display: flex;
+        justify-content: space-between;
+        &-img {
+            width: 40px;
+            height: 38px;
+            margin-right: 20px;
+            @include range;
+            padding: 15px 0 0 15px;
+            
+        }
+
+    }
+}

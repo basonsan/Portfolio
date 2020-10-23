@@ -1,0 +1,42 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    padding: 206px 0 0 390px;
+    background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+    h1 {
+        @include range;
+    }
+    h2 {
+        width: 532px;
+    }
+    &__button-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+    &__button {
+        height: 45px;
+        padding: 12px 26px;
+        background-color: $main-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-weight: 700;
+        font-size: 14px;
+        margin-right: 10px;
+        border-radius: 10%;
+        color: #000;
+        &_crystal {
+            background-color: rgba(0, 50, 50, 0);
+            box-shadow: none;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        
+
+    }
+    
+}
