@@ -33,7 +33,11 @@
             margin-right: 20px;
             @include range;
             padding: 15px 0 0 15px;
-            
+        }
+        &-descr {
+            span {
+                font-size: 12px;
+            }
         }
 
     }

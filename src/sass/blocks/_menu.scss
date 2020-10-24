@@ -34,6 +34,7 @@
         margin-bottom: 15px;
         position: relative;
         padding-left: 35px;
+        transition: 0.5s all;
         &::before{
             content: '';
             width: 15px;
@@ -45,11 +46,20 @@
             top: 50%;
             transform: translateY(-50%);
         }
+        &:hover {
+            transform: scale(1.1);
+            &:before {
+                background-color: #fff;
+            }
+        }
         a {
             color: #fff;
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     &__overlay {
