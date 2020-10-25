@@ -32,8 +32,9 @@
         @include range;
         &_center {
             @include range;
+            padding-left: 0;
             &:before {
-            left: calc(50% - 13px);
+            left: calc(50% - 18px);
         }
         }
     }

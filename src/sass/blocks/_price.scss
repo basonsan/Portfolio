@@ -1,0 +1,26 @@
+//секция с ценами
+.price {
+    padding-top: 60px;
+    .line {
+        margin-top: 25px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 366px);
+        justify-content: space-between;
+        //column-gap: calc(100% - 732px);
+        row-gap: 15px;
+        &-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &-count {
+                justify-self: end;
+            }
+            &-descr  {
+                font-size: 12px;
+                line-height: 18px;
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}

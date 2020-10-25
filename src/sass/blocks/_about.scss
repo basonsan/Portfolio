@@ -6,9 +6,13 @@
         display: flex;
     }
     &__wrapper-img {
-        width: 400px;
+        //width: 400px;
         //height: 400px;
-        background: url('../img/main_photo.jpg') center (center / cover) no-repeat;
+        //background: url('../img/main_photo.jpg') center (center / cover) no-repeat;
+        overflow: hidden;
+        img {
+            height: 100%;
+        }
     }
     &__wrapper-descr {
         width: 570px;
