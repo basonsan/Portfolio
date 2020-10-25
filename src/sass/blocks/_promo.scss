@@ -1,8 +1,12 @@
+//1 блок промо
 .promo {
     min-height: 100vh;
     position: relative;
-    padding: 206px 0 0 390px;
+    padding: 206px 0 0 0;
     background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+    .container {
+        padding-left: 200px;
+    }
     h1 {
         @include range;
     }

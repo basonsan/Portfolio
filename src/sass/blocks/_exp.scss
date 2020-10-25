@@ -1,0 +1,87 @@
+//3 блок опыт и образование
+.exp {
+    text-align: center;
+    padding-top: 120px;
+    .line {
+        margin: 25px auto 60px auto;
+    }
+    &__wrapper {
+        display: grid;
+        margin: 0 89px 0 115px;
+        grid-template-columns: repeat(2, 375px);
+        column-gap: 136px;
+        text-align: left;
+        h3 {
+            @include range;
+            padding-left: 0;
+            &::before {
+                left: -50px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    &__card {
+        margin-top: 45px;
+        display: grid;
+        grid-template-areas: 
+        "imgs title"
+        "imgs subtitle"
+        "descr descr";
+        grid-template-columns: 39px auto;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: calc(100% + 45px);
+            background-color: #000;
+            left: -43px;
+            top: -53px;
+        }
+        &-img {
+            grid-area: imgs;
+            align-self: end;
+            justify-self: end;
+            @include range;
+            &:before {
+                left: -4px;
+                top: 0;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 41px;
+                height: 2px;
+                background-color: #000;
+                left: -45px;
+                top: -1px; 
+            }
+            img {
+                width: 25px;
+            }
+        }
+        &-title {
+            padding-left: 19px;
+            grid-area: title;
+            h4 {
+                margin: 0;
+            }
+        }
+        &-subtitle {
+            padding-left: 19px;
+            grid-area: subtitle;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+
+        }
+        &-descr {
+            padding-top: 12px;
+            grid-area: descr;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

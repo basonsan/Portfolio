@@ -1,4 +1,4 @@
-@mixin range {
+@mixin range {  //создание псевдоэлемента (желтый кружок)
     position: relative;
     padding-left: 10px;
     z-index: 1;

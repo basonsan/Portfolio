@@ -1,11 +1,21 @@
+//блок для управления стилями заголовков
 .title {
     color: #000000;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
+    display: block;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
     &_fz16 {
         font-size: 16px;
         line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
     }
     &_fz36 { 
         font-size: 36px;
@@ -14,5 +24,17 @@
     &_fz48 {
         font-size: 48px;
         line-height: 60px;
+    }
+    &_center {
+        text-align: center;
+    }
+    &_range {
+        @include range;
+        &_center {
+            @include range;
+            &:before {
+            left: calc(50% - 13px);
+        }
+        }
     }
 }
