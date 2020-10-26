@@ -9,9 +9,12 @@
         //width: 400px;
         //height: 400px;
         //background: url('../img/main_photo.jpg') center (center / cover) no-repeat;
-        overflow: hidden;
+        //overflow: hidden;
+        //object-fit: cover;
         img {
+            object-fit: cover;
             height: 100%;
+            width: 100%;
         }
     }
     &__wrapper-descr {

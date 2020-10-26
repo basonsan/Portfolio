@@ -12,13 +12,19 @@
     }
     h1 {
         @include range;
+        color: #fff;
     }
     h2 {
         width: 532px;
+        color: #fff;
     }
+    
     &__button-wrapper {
         display: flex;
         justify-content: start;
+        .btn a {
+            color: #fff;
+        }
     }
     
     

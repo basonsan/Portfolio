@@ -497,24 +497,28 @@
                         <a href="https://wa.me/79374580720"><img src="icons/social/whatsapp.svg" alt="whatsapp"></a>
                         <a href="https://viber.click/79374580720"><img src="icons/social/viber.svg" alt="viber"></a>
                         <a href="https://tlgg.ru/basonsan"><img src="icons/social/teleg.svg" alt="teleg"></a>
-                        <a href="mailto:basonsan@yandex.ru"><img src="icons/social/mail.svg" alt="teleg"></a>
+                        <a href="mailto:basonsan@yandex.ru"><img src="icons/social/mail.svg" alt="mail"></a>
                     </div>
                     <div class="title title_fz14 contact__text">Или оставьте ваши данные и я сам вам напишу:</div>
                     <form class="form" action="#">
                         <div class="form__wrapper">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="form__wrapper">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="name">Ваша почта</label>
                         </div>
                         <div class="form__wrapper form_horizon">
-                            <textarea name="text" id="text" type="text"></textarea>
+                            <textarea required name="text" id="text" type="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="form__btn">
-                            <button class="btn form__btn">Отправить сообщение</button>
+                            <div class="form__btn-wrapper"><button class="btn">Отправить сообщение</button></div>
+                            <div class="form__check">
+                                <input required  type="checkbox">
+                                <span>Я согласен(а) с <a target="blank" href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
 
                     </form>

@@ -18,6 +18,8 @@
         &:hover{
             transform: scale(2);
         }
+        background-color: #fff;
+        border-radius: 5px;
     }
     &.active {
         //transform: rotate(-90deg);
