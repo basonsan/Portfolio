@@ -65,27 +65,27 @@
                 </svg>
             </div>
             <ul class="menu__list">
-                <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
-                <li class="menu__link"><a href="#exp">МОЙ ОПЫТ</a></li>
-                <li class="menu__link"><a href="#skill">МОИ НАВЫКИ</a></li>
-                <li class="menu__link"><a href="#works">МОИ РАБОТЫ</a></li>
+                <li class="menu__link"><a href="#about" id="about__link">ПРО МЕНЯ</a></li>
+                <li class="menu__link"><a href="#exp" id="exp__link">МОЙ ОПЫТ</a></li>
+                <li class="menu__link"><a href="#skill" id="skill__link">МОИ НАВЫКИ</a></li>
+                <li class="menu__link"><a href="#works" id="works__link">МОИ РАБОТЫ</a></li>
                 <!-- <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li> -->
-                <li class="menu__link"><a href="#contact">КОНТАКТЫ</a></li>
+                <li class="menu__link"><a href="#contact" id="contact__link">КОНТАКТЫ</a></li>
             </ul>
         </div>
         <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
             <div class="promo__wrapper">
-                <h1 class="title title_fz16">Меня зовут Василий Климанов</h1>
+                <h1 class="title title_fz16">Меня зовут Василий Климанов</h1> 
                 <h2 class="title title_fz48">Я web-разработчик из города Ульяновск</h2>
                 <div class="promo__button-wrapper">
-                    <div class="btn">
-                        <a href="#">Портфолио</a>
+                    <div class="btn" id="btn__works">
+                        Портфолио
                     </div>
-                    <div class="btn btn_crystal">
-                        <a href="">Про меня</a> 
+                    <div class="btn btn_crystal" id="btn__about">
+                        Про меня 
                     </div>
                 </div>
             </div>
@@ -459,6 +459,9 @@
                 </div>  
             </div>
     </section>
+    <a href="#up" class="up-arrow up-arrow_active">
+        <img src="icons/up.svg" alt="up">
+    </a>
     <script src="js/script.js"></script>
 </body>
 </html>

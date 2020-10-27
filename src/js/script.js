@@ -7,7 +7,45 @@ const hamburger = document.querySelector('.hamburger'), //справа наве�
     moreClose = document.querySelector('.skill__card-more-close'), //кнопка скрыть в скилах
     skillCard = document.querySelector('.skill__card'), //обертка скилов
     menuList = document.querySelector('.menu__list'), //список меню
-    btnSubmit = document.querySelector('.btn_form');
+    btnSubmit = document.querySelector('.btn_form'), //кнопка внизу формы отправить
+    btnWorks = document.getElementById('btn__works'), //кнопка портфолио наверху
+    works = document.getElementById('works'), //блок с моими работами
+    btnAbout = document.getElementById('btn__about'), //кнопка портфолио наверху
+    about = document.getElementById('about'); //блок с моими работами
+    upArrow = document.querySelector('.up-arrow'),
+    promo = document.getElementById('promo'),
+    aboutLink = document.getElementById('about__link'),
+    
+    expLink = document.getElementById('exp__link'),
+    skillLink = document.getElementById('skill__link'),
+    worksLink = document.getElementById('works__link'),
+    contactLink = document.getElementById('contact__link');
+
+function links (aLink, idElement) {
+    aLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        idElement.scrollIntoView({behavior: "smooth"});
+    });
+}
+
+links (btnWorks, works);
+links (btnAbout, about);
+links (aboutLink, about);
+links (expLink, exp);
+links (skillLink, skill);
+links (worksLink, works);
+links (contactLink, contact);
+links (upArrow, promo);
+
+
+window.addEventListener('scroll', function() {
+    if (document.documentElement.scrollTop>848) {
+        upArrow.classList.add('up-arrow_active');
+    } else {
+        upArrow.classList.remove('up-arrow_active');
+    }
+    //document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+  });
 
 //обработка нажатия подробнее в разделе мои навыки
 moreOpen.addEventListener('click', () => {

@@ -19,8 +19,11 @@
     &__button-wrapper {
         display: flex;
         justify-content: start;
-        .btn a {
+        .btn {
             color: #fff;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     
