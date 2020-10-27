@@ -1,5 +1,6 @@
 .form {
     //padding-top: 30px;
+    //width: calc(100vw - 500px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 45px 190px 45px;
@@ -36,12 +37,15 @@
 
     }
     &__check {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
         align-items: center;
         input {
             width: auto;
             height: auto;
             margin-right: 10px;
         }
+        
     }
 }

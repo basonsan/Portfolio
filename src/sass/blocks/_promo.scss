@@ -7,9 +7,6 @@
     &__wrapper {
         padding: 340px 0 0 100px;
     }
-    .container {
-        padding-left: 200px;
-    }
     h1 {
         @include range;
         color: #fff;

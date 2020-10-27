@@ -2,7 +2,7 @@
 .menu {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 8;
     visibility: hidden;
     left: -100%;
@@ -27,8 +27,6 @@
         top: 25px;
         right: 25px;
         cursor: pointer;
-    }
-    &__list {
     }
     &__link {
         list-style-type: none;
@@ -91,7 +89,7 @@
         display: block;
         height: 3px;
         width: 30px;
-        background-color: #000;
+        background-color: #fff;
         &.long {
             margin: 6px 0 6px 0;
             //width: 36px;
