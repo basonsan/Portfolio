@@ -19,9 +19,11 @@
         margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
+        flex-wrap: wrap;
         img {
             height: 30px;
             margin-right: 25px;
+            margin-bottom: 10px;
             transition: 0.5s all;
             &:hover {
                 transform: scale(1.4);
